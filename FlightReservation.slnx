@@ -1,10 +1,11 @@
 <Solution>
-  <Folder Name="/.github/">
-    <File Path="copilot-instructions.md" />
+  <Folder Name="/Solution Items/" />
+  <Folder Name="/Solution Items/agents/" />
+  <Folder Name="/Solution Items/instructions/">
+    <File Path=".github/instructions/backend-instructions.md" />
+    <File Path=".github/instructions/copilot-instructions.md" />
   </Folder>
-  <Folder Name="/.github/instructions/">
-    <File Path="backend-instructions.md" />
-  </Folder>
-  <Folder Name="/.github/skills/" />
+  <Folder Name="/Solution Items/skills/" />
+  <Folder Name="/Solution Items/workflows/" />
   <Project Path="FlightReservation.Backend/FlightReservation.Backend.csproj" Id="7807e0b8-8db8-4b5d-9132-4113c8afe7c0" />
 </Solution>
