@@ -6,4 +6,5 @@
     <File Path="backend-instructions.md" />
   </Folder>
   <Folder Name="/.github/skills/" />
+  <Project Path="FlightReservation.Backend/FlightReservation.Backend.csproj" Id="7807e0b8-8db8-4b5d-9132-4113c8afe7c0" />
 </Solution>
