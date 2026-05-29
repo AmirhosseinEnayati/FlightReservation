@@ -1,0 +1,16 @@
+{
+  "name": "git-pr-creator",
+  "description": "Settings for PR creation and labeling",
+  "settings": {
+    "defaultBranch": "master",
+    "autoMerge": false,
+    "labels": {
+      "safe": ["dependencies","automated"],
+      "review": ["dependencies","review-required"],
+      "highrisk": ["dependencies","high-risk"],
+      "blocked": ["dependencies","blocked"]
+    },
+    "branchNameFormat": "deps/auto/{scope}/{package}-{version}",
+    "draftForMajor": true
+  }
+}

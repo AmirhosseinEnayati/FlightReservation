@@ -1,0 +1,17 @@
+# Local orchestrator workflow for maintainers to run the agent locally or in CI
+
+name: Local Dependency Manager Workflow
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  run-local-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Dependency Audit Script
+        run: |
+          echo "This job is a placeholder to run the agent locally. Use the .github workflow for scheduled runs."

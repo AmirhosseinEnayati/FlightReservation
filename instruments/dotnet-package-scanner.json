@@ -1,0 +1,20 @@
+{
+  "name": "dotnet-package-scanner",
+  "description": "Rules for scanning and evaluating .NET packages",
+  "settings": {
+    "checkOutdated": true,
+    "checkDeprecation": true,
+    "projectFilePatterns": ["**/*.csproj", "Directory.Packages.props"],
+    "nugetDeprecationApi": "https://api.nuget.org/v3/index.json",
+    "compatibilityRules": [
+      {
+        "package": "Swashbuckle.AspNetCore",
+        "requiresAspNetCoreMinimumMajor": 3
+      },
+      {
+        "packagePrefix": "Microsoft.Extensions.",
+        "alignMajorWithFramework": true
+      }
+    ]
+  }
+}

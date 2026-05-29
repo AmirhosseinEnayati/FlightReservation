@@ -1,0 +1,21 @@
+{
+  "name": "npm-package-scanner",
+  "description": "Rules for scanning and evaluating npm packages",
+  "settings": {
+    "checkOutdated": true,
+    "checkDeprecation": true,
+    "packageFilePatterns": ["package.json", "**/package.json"],
+    "npmRegistry": "https://registry.npmjs.org/",
+    "compatibilityRules": [
+      {
+        "package": "react",
+        "alignPeers": ["react-dom"],
+        "majorCompatibility": true
+      },
+      {
+        "packagePrefix": "@types/",
+        "matchTypescriptVersion": true
+      }
+    ]
+  }
+}

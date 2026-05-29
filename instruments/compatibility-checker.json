@@ -1,0 +1,26 @@
+{
+  "name": "compatibility-checker",
+  "description": "Heuristics and matrices to evaluate dependency compatibility",
+  "rules": {
+    "dotnet": {
+      "Swashbuckle.AspNetCore": {
+        "compatibleWithAspNetCoreMajor": [2,3,5,6,7,8,9,10]
+      },
+      "Newtonsoft.Json": {
+        "notes": "Mixing System.Text.Json may require mapping code; major upgrades may change contract behavior"
+      }
+    },
+    "npm": {
+      "react": {
+        "peerGroups": ["react-dom", "react-router", "@types/react"],
+        "majorVersionBreaks": true
+      },
+      "typescript": {
+        "compatibilityMatrix": {
+          "4.9": {"minNode": 12},
+          "5.0": {"minNode": 14}
+        }
+      }
+    }
+  }
+}
