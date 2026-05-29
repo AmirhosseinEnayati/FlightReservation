@@ -2,6 +2,8 @@
   <Folder Name="/.github/">
     <File Path="copilot-instructions.md" />
   </Folder>
-  <Folder Name="/.github/instructions/" />
+  <Folder Name="/.github/instructions/">
+    <File Path="backend-instructions.md" />
+  </Folder>
   <Folder Name="/.github/skills/" />
 </Solution>
